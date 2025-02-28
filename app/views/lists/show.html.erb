@@ -1,0 +1,16 @@
+<div class="container w-25">
+    <div class="card border-dark mb-3" style="max-width: 18rem;">
+      <div class="card-header"><%= @list.name %></div>
+    </div>
+
+  <div class="card border-dark mb-3" style="max-width: 18rem;">
+    <div class="card-header">
+    <ul>
+      <% @list.bookmarks.each do |bookmark|  %>
+      <li><%= bookmark.comment %></li>
+        <% end %>
+    </ul>
+    </div>
+  </div>
+  <%= link_to "Back", lists_path, class: "btn btn-outline-primary"%>
+</div>

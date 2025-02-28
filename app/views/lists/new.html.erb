@@ -1,0 +1,8 @@
+<div class="container w-25">
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+<br>
+<%= link_to "back", lists_path, class: "btn btn-warning" %>
+</div>
