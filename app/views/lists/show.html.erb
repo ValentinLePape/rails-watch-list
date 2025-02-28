@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://media.gettyimages.com/id/10150595/fr/photo/audience-in-movie-theater-1935.jpg?s=1024x1024&w=gi&k=20&c=SiYedisT81jF924hZjFcJEgYSd-2K3CQK99H90V-4CQ=);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @list.photo.key, height: 300, crop: :fill %>');">
   <div class="container">
     <h1><%= @list.name %></h1>
   </div>
