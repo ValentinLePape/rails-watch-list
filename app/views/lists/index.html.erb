@@ -1,9 +1,17 @@
-<div class="container w-25">
-  <h1>Lists:</h1>
-  <ul class="list-group mb-5">
-    <% @lists.each do |list| %>
-    <li class="list-group-item" aria-current="true"><%= link_to list.name, list_path(list) %></li>
-      <% end %>
-  </ul>
-  <%= link_to "New List", new_list_path, class: "btn btn-outline-primary" %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://media.gettyimages.com/id/10150595/fr/photo/audience-in-movie-theater-1935.jpg?s=1024x1024&w=gi&k=20&c=SiYedisT81jF924hZjFcJEgYSd-2K3CQK99H90V-4CQ=);">
+  <div class="container">
+    <h1>Save any kind of movies</h1>
+  </div>
 </div>
+<div class="container w-10">
+  <h1>Lists:</h1>
+<div class="cards">
+  <% @lists.each do |list| %>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+    <%= link_to list.name, list_path(list) %>
+  </div>
+    <% end %>
+</div>
+</div>
+<div><%= link_to "New List", new_list_path, class: "btn btn-outline-primary" %></div>
+
